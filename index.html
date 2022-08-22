@@ -1,12 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pick your favorite V</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
+    ">
 </head>
+
 <body>
-    
+    <header class="text-center bg-dark my-5">
+        <div class="text-center text-white p-5">
+            <h1>Pick your favorite V</h1>
+            <p>There are some best players in the world that you need. Select your favorite players. Make your team the
+                best team.</p>
+
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="row ">
+                <div class="g-col-8 md-g-col-6">
+                    <div class="card-group mx-auto">
+                        <div class="card m-2">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="text-center">
+                                <h5 id="player1" class="">Card title</h5>
+                                <p class="">This is a wider card with supporting.</p>
+                                <button id="select-btn1"  type="button" class="  btn btn-primary btn-lg mx-auto w-auto">select</button>
+                            </div>
+                        </div>
+                        <div class="card m-2">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 id="player2" class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting.</p>
+                                <button id="select-btn2" type="button" class="select-btn btn btn-primary btn-lg mx-auto">select</button>
+                            </div>
+                        </div>
+                        <div class="card m-2">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 id="player3" class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting.</p>
+                                <button id="select-btn3" type="button" class="select-btn btn btn-primary btn-lg mx-auto">select</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-group mx-auto">
+                        <div class="card m-2">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 id="player4" class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting</p>
+                                <button id="select-btn4" type="button" class="select-btn btn btn-primary btn-lg mx-auto">select</button>
+                            </div>
+                        </div>
+                        <div class="card m-2">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 id="player5" class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting</p>
+                                <button id="select-btn5" type="button" class="select-btn btn btn-primary btn-lg mx-auto">select</button>
+                            </div>
+                        </div>
+                        <div class="card m-2">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 id="player6" class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting</p>
+                                <button id="select-btn6" type="button" class="select-btn btn btn-primary btn-lg mx-auto">select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- expences calculate part -->
+               <div class="g-col-4">
+                <div class="d-flex flex-column">
+                    <div class="card bg-secondary mb-5">
+                        <div class="mb-4 ">
+                            <h1 class="text-center">Select five</h1>
+                        </div>
+                        <ol id="players-list" class="text-center">
+                            
+                        </ol>
+                    </div>
+                    <div class="card bg-secondary">
+                        <div class="text-center">
+                            <h1>budget</h1>
+                        </div>
+                        <div class=" text-center d-flex flex-row gap-4">
+                            <h4>per Player</h4>
+                            <input id="budget-field" type="text" value="00">
+                        </div>
+                     <button id="budget-btn" class="bg-primary rounded">Calculate</button>
+                        <div>
+                            <h1 class="text-center">Player Expenses $<span>5000</span></h1>
+                        </div>
+                        <div class="text-center d-flex flex-row gap-4">
+                            <h4>Manager</h4>
+                            <input type="text" value="2000">
+                        </div>
+                        <div class="text-center d-flex flex-row gap-4">
+                            <h4>Coach</h4>
+                            <input type="text" value="4000">
+                        </div>
+                        <button  class="bg-primary rounded">Calculate Total</button>
+                        <div class="d-flex flex-row gap-4">
+                            <h3>Total</h3>
+                            <h3>$<span>00</span></h3>
+                        </div>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/select.js"></script>
+    <script src="js/budget.js"></script>
 </body>
+
 </html>
