@@ -116,5 +116,4 @@ function plyaerAddbyId(elementId){
         plyaerAddbyId('player6')
         })
 
-
-
+        
