@@ -10,7 +10,7 @@
     ">
 </head>
 
-<body>
+<body class="bg-">
     <header class="text-center bg-dark my-5">
         <div class="text-center text-white p-5">
             <h1>Pick your favorite V</h1>
@@ -20,12 +20,12 @@
         </div>
     </header>
     <main>
-        <section>
+        <section class="container">
             <div class="row ">
-                <div class="g-col-8 md-g-col-6">
+                <div class="col-9">
                     <div class="card-group mx-auto">
                         <div class="card m-2">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="images/player1.png" class="card-img-top" alt="...">
                             <div class="text-center">
                                 <h5 id="player1" class="">Card title</h5>
                                 <p class="">This is a wider card with supporting.</p>
@@ -34,7 +34,7 @@
                             </div>
                         </div>
                         <div class="card m-2">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="images/player2.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 id="player2" class="card-title">Card title</h5>
                                 <p class="card-text">This is a wider card with supporting.</p>
@@ -43,7 +43,7 @@
                             </div>
                         </div>
                         <div class="card m-2">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="images/player3.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 id="player3" class="card-title">Card title</h5>
                                 <p class="card-text">This is a wider card with supporting.</p>
@@ -54,7 +54,7 @@
                     </div>
                     <div class="card-group mx-auto">
                         <div class="card m-2">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="images/player4.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 id="player4" class="card-title">Card title</h5>
                                 <p class="card-text">This is a wider card with supporting</p>
@@ -63,7 +63,7 @@
                             </div>
                         </div>
                         <div class="card m-2">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="images/player5.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 id="player5" class="card-title">Card title</h5>
                                 <p class="card-text">This is a wider card with supporting</p>
@@ -72,7 +72,7 @@
                             </div>
                         </div>
                         <div class="card m-2">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="images/player6.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 id="player6" class="card-title">Card title</h5>
                                 <p class="card-text">This is a wider card with supporting</p>
@@ -84,38 +84,37 @@
                 </div>
 
                 <!-- expences calculate part -->
-                <div class="g-col-4">
+                <div class="col-3" >
                     <div class="d-flex flex-column">
                         <div class="card bg-secondary mb-5">
                             <div class="mb-4 ">
                                 <h1 class="text-center">Select five</h1>
                             </div>
                             <ol id="players-list" class="text-center">
-
                             </ol>
                         </div>
                         <div class="card bg-secondary">
                             <div class="text-center">
                                 <h1>budget</h1>
                             </div>
-                            <div class=" text-center d-flex flex-row gap-4">
+                            <div class=" text-center d-flex flex-row gap-1 m-2">
                                 <h4>per Player</h4>
-                                <input id="budget-field" type="text" value="00">
+                                <input id="budget-field" type="text" value="" placeholder="Cost of player">
                             </div>
-                            <button id="budget-btn" class="bg-primary rounded">Calculate</button>
+                            <button id="budget-btn" class="bg-primary rounded m-2">Calculate</button>
                             <div>
-                                <h1 class="text-center">Player Expenses $<span id="players-expenses">00</span></h1>
+                                <h4 class="text-center">Player Expenses $<span id="players-expenses">00</span></h4>
                             </div>
-                            <div class="text-center d-flex flex-row gap-4">
+                            <div class="text-center d-flex flex-row gap-2 m-2" >
                                 <h4>Manager</h4>
-                                <input id="manager-cost" type="text" value="00">
+                                <input id="manager-cost" type="text" value="" placeholder="Cost of Manager">
                             </div>
-                            <div class="text-center d-flex flex-row gap-4">
+                            <div class="text-center d-flex flex-row gap-4 m-2">
                                 <h4>Coach</h4>
-                                <input id="coach-cost" type="text" value="00">
+                                <input id="coach-cost" type="text" value="" placeholder="Cost of Coach" >
                             </div>
-                            <button id="sub-total-btn" class="bg-primary rounded">Calculate Total</button>
-                            <div class="d-flex flex-row gap-4">
+                            <button id="sub-total-btn" class="bg-primary rounded m-2">Calculate Total</button>
+                            <div class="d-flex flex-row gap-4 m-2">
                                 <h3>Total</h3>
                                 <h3>$<span id="sub-total">00</span></h3>
                             </div>

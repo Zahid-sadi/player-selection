@@ -1,5 +1,9 @@
 
-function plyaerAddbyId(elementId){
+
+
+
+
+function playerAddById(elementId){
     const ulList = document.getElementById('players-list')
 
             // value from 
@@ -23,41 +27,33 @@ function plyaerAddbyId(elementId){
 
         // 1no player selection
         const btn1 = document.getElementById('select-btn1').addEventListener('click',function(){
-            plyaerAddbyId('player1')
-
-            if(bt1 === click){
-                btn1.setAttribute('disabled', true)
-            }
-            
-
-
+            playerAddById('player1')
     
-        
         })
 
         // 2no player selection
         document.getElementById('select-btn2').addEventListener('click',function(){
-            plyaerAddbyId('player2')
+            playerAddById('player2')
         })
 
         // 3no player selection
         document.getElementById('select-btn3').addEventListener('click',function(){
-            plyaerAddbyId('player3')
+            playerAddById('player3')
         })
 
         // 4no player selection
         document.getElementById('select-btn4').addEventListener('click',function(){
-            plyaerAddbyId('player4')
+            playerAddById('player4')
         })
 
         // 5no player selection
         document.getElementById('select-btn5').addEventListener('click',function(){
-            plyaerAddbyId('player5')
+            playerAddById('player5')
         })
 
         // 6no player selection
         document.getElementById('select-btn6').addEventListener('click',function(){
-        plyaerAddbyId('player6')
+        playerAddById('player6')
         })
 
         
