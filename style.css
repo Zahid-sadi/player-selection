@@ -3,7 +3,6 @@
 
 }
 .top-banner{
-    color: black;
     font-style: italic;
     height: 550px;
     background-image: url(images/football-1.png);
@@ -14,6 +13,9 @@
 .custom-color{
     color:springgreen
 }
-.font-size{
-    font-size: 60px;
+.font-custom-size{
+    font-size: 70px;
+}
+.v-size{
+    font-size: 110px ;
 }

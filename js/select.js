@@ -3,9 +3,7 @@
         const ulList = document.getElementById('players-list')
         const text = document.getElementById(elementId);
         const newText = text.innerText;
-                /* if (ulList.lastChild.text === newText) {
-
-                } */
+              
 
                 if (ulList.getElementsByTagName('li').length > 4 ) {
                     alert('Select only 5 players');
@@ -27,16 +25,9 @@
                 /* disable btn added after clickd */
                 document.getElementById(buttonSelect).disabled = true;
 
-                playerButton.disabled = true;
-                playerButton.style.backgroundColor = 'gray';
-                playerButton.innerText = 'SELECTED';
-
                 }
 
-            
-    }
-
-
+            }
 
 
 
