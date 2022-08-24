@@ -1,4 +1,4 @@
-
+// function for getting value from input field 
 function getElementValueById(inputId){
     const inputField = document.getElementById(inputId);
     const inputFieldValueString = inputField.value;
@@ -9,6 +9,7 @@ function getElementValueById(inputId){
     
 }
 
+// function for getting value from except input field 
 function getElementTextById (inputId){
     const inputField = document.getElementById(inputId);
     const inputFieldValueString = inputField.innerText;
@@ -17,7 +18,7 @@ function getElementTextById (inputId){
     return inputFieldValue;
 }
 
-//  function for amount of adding
+
 function getTotalValue( elementId, newValue){
     const textElement = document.getElementById(elementId)
     textElement.innerText = newValue;
